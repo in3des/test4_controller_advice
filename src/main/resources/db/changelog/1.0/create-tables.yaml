@@ -1,7 +1,7 @@
 databaseChangeLog:
 - changeSet:
     id: 1643977606600-1
-    author: in3des (generated)
+    author: weabs
     changes:
     - createTable:
         columns:
@@ -22,7 +22,7 @@ databaseChangeLog:
         tableName: form_sectors
 - changeSet:
     id: 1643977606600-2
-    author: in3des (generated)
+    author: weabs
     changes:
     - createTable:
         columns:
@@ -47,7 +47,7 @@ databaseChangeLog:
         tableName: forms
 - changeSet:
     id: 1643977606600-3
-    author: in3des (generated)
+    author: weabs
     changes:
     - createTable:
         columns:
@@ -70,7 +70,7 @@ databaseChangeLog:
         tableName: sectors
 - changeSet:
     id: 1643977606600-5
-    author: in3des (generated)
+    author: weabs
     changes:
     - addForeignKeyConstraint:
         baseColumnNames: form_id
@@ -85,7 +85,7 @@ databaseChangeLog:
         validate: true
 - changeSet:
     id: 1643977606600-6
-    author: in3des (generated)
+    author: weabs
     changes:
     - addForeignKeyConstraint:
         baseColumnNames: sector_id
@@ -100,7 +100,7 @@ databaseChangeLog:
         validate: true
 - changeSet:
     id: 1643977606600-7
-    author: in3des (generated)
+    author: weabs
     changes:
     - addForeignKeyConstraint:
         baseColumnNames: parent_id
