@@ -34,7 +34,7 @@ class FormControllerTest {
     private ObjectMapper objectMapper;
 
     private static final int id = 1;
-    private static final int idFailed = 1;
+    private static final int idFailed = 2;
     private static final String URL = "/api/v1";
 
     @Test
