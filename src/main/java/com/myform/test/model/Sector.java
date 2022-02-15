@@ -27,6 +27,7 @@ public class Sector {
 
     @ToString.Exclude
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "parentSectorName", cascade = CascadeType.ALL)
+//    @OneToMany(mappedBy = "parentSectorName", cascade = CascadeType.ALL)
     private List<Sector> sectors = new ArrayList<>();
 
     @ManyToOne(cascade = CascadeType.ALL)

@@ -1,7 +1,7 @@
 databaseChangeLog:
 - changeSet:
     id: 1643977606600-1
-    author: weabs
+    author: DB_admin_1
     changes:
     - createTable:
         columns:
@@ -22,7 +22,7 @@ databaseChangeLog:
         tableName: form_sectors
 - changeSet:
     id: 1643977606600-2
-    author: weabs
+    author: DB_admin_1
     changes:
     - createTable:
         columns:
@@ -47,7 +47,7 @@ databaseChangeLog:
         tableName: forms
 - changeSet:
     id: 1643977606600-3
-    author: weabs
+    author: DB_admin_1
     changes:
     - createTable:
         columns:
@@ -70,12 +70,12 @@ databaseChangeLog:
         tableName: sectors
 - changeSet:
     id: 1643977606600-5
-    author: weabs
+    author: DB_admin_1
     changes:
     - addForeignKeyConstraint:
         baseColumnNames: form_id
         baseTableName: form_sectors
-        constraintName: fk3ab5n65losyl9ncpqsc4j68s0
+        constraintName: forms_fkey
         deferrable: false
         initiallyDeferred: false
         onDelete: NO ACTION
@@ -85,12 +85,12 @@ databaseChangeLog:
         validate: true
 - changeSet:
     id: 1643977606600-6
-    author: weabs
+    author: DB_admin_1
     changes:
     - addForeignKeyConstraint:
         baseColumnNames: sector_id
         baseTableName: form_sectors
-        constraintName: fkpqk7fns7txp2176ewt0ngjewg
+        constraintName: sectors_fkey
         deferrable: false
         initiallyDeferred: false
         onDelete: NO ACTION
@@ -100,12 +100,12 @@ databaseChangeLog:
         validate: true
 - changeSet:
     id: 1643977606600-7
-    author: weabs
+    author: DB_admin_1
     changes:
     - addForeignKeyConstraint:
         baseColumnNames: parent_id
         baseTableName: sectors
-        constraintName: fkq1348ewyn6hb4vr2yypo2ofcy
+        constraintName: sectors_parent_fkey
         deferrable: false
         initiallyDeferred: false
         onDelete: NO ACTION

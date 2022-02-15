@@ -1,7 +1,7 @@
 databaseChangeLog:
     - changeSet:
         id: 1643977606600-4
-        author: weabs
+        author: DB_admin_1
         changes:
         - loadData:
             columns:
