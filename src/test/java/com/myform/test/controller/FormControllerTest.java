@@ -34,6 +34,7 @@ class FormControllerTest {
     private ObjectMapper objectMapper;
 
     private static final int id = 1;
+    private static final int idFailed = 1;
     private static final String URL = "/api/v1";
 
     @Test
@@ -85,8 +86,8 @@ class FormControllerTest {
 
     @Test
     public void getFormByIdFailed() throws Exception {
-        int id = 1001;
-        mockMvc.perform(get(URL + "/form/" + id)
+
+        mockMvc.perform(get(URL + "/form/" + idFailed)
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON))
                 .andDo(print())
